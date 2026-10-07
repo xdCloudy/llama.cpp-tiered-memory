@@ -1,3 +1,9 @@
+# llama.cpp-tiered-memory research fork
+
+This fork studies semantic packed-memory and tiering ideas for llama.cpp. **This project is inspired by CRAM-style compressed-memory principles but is an independent llama.cpp-specific research implementation.** It is not a literal port of Meta's hardware design. See [the research overview](RESEARCH.md), [roadmap](ROADMAP.md), and [upstream relationship](UPSTREAM.md).
+
+The upstream llama.cpp documentation follows.
+
 # llama.cpp
 
 ![llama](https://raw.githubusercontent.com/ggml-org/llama.brand/refs/heads/master/cover/llama-cpp/cover-llama-cpp-dark.svg)

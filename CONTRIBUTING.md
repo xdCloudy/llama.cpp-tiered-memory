@@ -207,3 +207,7 @@ Maintainers reserve the right to decline review or close pull requests for any r
 The Github issues, PRs and discussions contain a lot of information that can be useful to get familiar with the codebase. For convenience, some of the more important information is referenced from Github projects:
 
 https://github.com/ggml-org/llama.cpp/projects
+
+## Research-fork expectations
+
+This fork keeps experiments opt-in and compares current upstream, feature-disabled fork, and feature-enabled fork on matched workloads. Document hardware, OS, compiler/build flags, model, quant, context, offload, and workload settings. Report capacity, transfer, loading, latency, prompt speed, and generation speed separately; keep negative findings. New storage/backend contracts need an ADR and fallback plan. See [AGENTS.md](AGENTS.md), [BENCHMARKS.md](BENCHMARKS.md), and [EXPERIMENTS.md](EXPERIMENTS.md).

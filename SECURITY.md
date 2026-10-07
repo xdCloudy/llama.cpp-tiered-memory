@@ -104,3 +104,7 @@ If you intend to run multiple models in parallel with shared memory, it is your 
 3. Model Sharing: In a multitenant model sharing design, tenants and users must understand the security risks of running code provided by others. Since there are no reliable methods to detect malicious models, sandboxing the model execution is the recommended approach to mitigate the risk.
 
 4. Hardware Attacks: GPUs or TPUs can also be attacked. [Researches](https://scholar.google.com/scholar?q=gpu+side+channel) has shown that side channel attacks on GPUs are possible, which can make data leak from other models or processes running on the same system at the same time.
+
+## Packed-memory research notes
+
+GGUF tensor metadata and payloads, packed-block indexes, and cache sizes are untrusted inputs. Validate offsets, sizes, integer overflow, alignment, and codec output before mapping, allocation, or copy. Keep async source buffers alive until completion; eviction cannot free memory used by an in-flight copy or kernel. Corruption must be detected and use the documented fallback or fail safely. Lossy representations must be explicit and opt-in. See [SECURITY.md project notes](SECURITY.md) and [packed-memory design](PACKED_MEMORY.md).
