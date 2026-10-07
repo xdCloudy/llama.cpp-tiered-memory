@@ -4,7 +4,7 @@ Every significant experiment gets a report under docs/experiments/ using EXPERIM
 
 | ID | Question | Status | Report |
 |---|---|---|---|
-| EXP-001 | Secondary compressibility of GGUF payloads by type, role, and chunk size | planned | docs/experiments/EXP-001-tensor-compressibility.md |
+| EXP-001 | Secondary compressibility of GGUF payloads by type, role, and chunk size | active | docs/experiments/EXP-001-tensor-compressibility.md |
 | EXP-002 | MoE expert locality and reuse distance | planned | docs/experiments/EXP-002-moe-locality.md |
 | EXP-003 | Packed host-to-CUDA transfer economics | planned; gated on EXP-001 | docs/experiments/EXP-003-packed-pcie-transfer.md |
 

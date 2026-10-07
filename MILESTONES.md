@@ -5,7 +5,7 @@ GitHub milestones mirror this list. Dates are unset until work is scoped. A mile
 | ID | Name | Initial state | Exit evidence |
 |---|---|---|---|
 | M0 | Research & Baseline | active | architecture map, baseline builds/manifests, repeatable measurement procedure |
-| M1 | Tensor Compressibility Profiler | planned | reproducible tensor report with codecs, chunk sizes, ratios and throughput |
+| M1 | Tensor Compressibility Profiler | active | reproducible tensor report with codecs, chunk sizes, ratios and throughput |
 | M2 | Memory Instrumentation | planned | allocation/copy/fault counters with known limits |
 | M3 | Packed Memory Backend | planned | opt-in random-access block store, corruption checks, fallback |
 | M4 | Hot/Warm/Cold Tiering | planned | bounded promotion/demotion and thrash measurements |
